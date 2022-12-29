@@ -1,0 +1,75 @@
+aside {
+  width: 15%;
+  height: 100vh;
+  background-color: $gray-800;
+  position: fixed;
+  z-index: 1;
+  flex: 1 0 auto;
+  .sidebar {
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    .card__body {
+      .logo {
+        height: 7rem;
+        border-bottom: 1px solid $gray-200;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1 {
+          color: #ffffff;
+          text-align: center;
+          margin-bottom: 25px;
+        }
+      }
+      .main__menu-item {
+        padding: 5px 5px;
+        cursor: pointer;
+        position: relative;
+        &.top {
+          margin-top: 2rem;
+        }i{
+          margin:0 10px;
+        }
+        & > a {
+          height: 150% !important;
+          color: $white;
+          text-decoration: none;
+          font-size: 1.2rem;
+          .pull__right{
+            position: absolute;
+            right: 5px;
+          }
+        }
+        &:hover > a {
+          color: #ff5252;
+        }
+        ul {
+          margin-top: 8px;
+          width: 120%;
+          transform: translateX(-5%);
+          li {
+            display: block;
+            a {
+              color: #eeeeee;
+              width: 100%;
+              text-decoration: none;
+              font-size: 12px;
+              background-color: #111111;
+              &:hover {
+                color: #ff5252;
+              }
+              & > span {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #first, #second,#third, #fourth,#fifth,#sixth,#seventh{
+    margin-top: 5px;
+  }
+}
