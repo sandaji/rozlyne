@@ -18,7 +18,7 @@
         <!-- header section -->
         <?php
           require "includes/header.php";
-          // createHeader('group', 'Manage Supplier', 'Manage Existing Supplier');
+          createHeader('group', 'Manage Supplier', 'Manage Existing Supplier');
         ?>
         <!-- header section end -->
 
@@ -60,7 +60,7 @@
 
         </div>
         <!-- form content end -->
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
       </div>
     </div>
     

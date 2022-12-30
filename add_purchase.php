@@ -4,17 +4,15 @@
     <meta charset="utf-8">
     <title>Add New Purchase</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="add_new_supplier_model">
       <div class="modal-dialog">
       	<div class="modal-content">
-      		<div class="modal-header" style="background-color: #ff5252; color: white">
-            <div class="font-weight-bold">Add New Supplier</div>
+      		<div class="modal-header" style="background-color: #9732DAFF; color: white">
+            <div class="font-weight-bold">Add New purchases</div>
       			<button class="close" style="outline: none;" onclick="document.getElementById('add_new_supplier_model').style.display = 'none';"><i class="fa fa-close"></i></button>
       		</div>
       		<div class="modal-body">
@@ -34,7 +32,7 @@
         <!-- header section -->
         <?php
           require "includes/header.php";
-          // createHeader('bar-chart', 'Add Purchase', 'Add New Purchase');
+          createHeader('bar-chart', 'Add Purchase', 'Add New Purchase');
         ?>
         <!-- header section end -->
 
@@ -56,19 +54,19 @@
               <code class="text-danger small font-weight-bold float-right" id="invoice_number_error" style="display: none;"></code>
             </div>
 
-            <!--
+            
             <div class="col col-md-2 form-group">
               <label class="font-weight-bold" for="">Voucher Number :</label>
               <input type="number" class="form-control" placeholder="Voucher Number" name="voucher_number">
             </div>
-            -->
+           
 
             <div class="col col-md-2 form-group">
               <label class="font-weight-bold" for="paytype">Payment Type :</label>
               <select id="payment_type" name="paytype" class="form-control">
               	<option value="Cash Payment">Cash Payment</option>
-                <option value="Net Banking">Net Banking</option>
-                <option value="Payment Due">Payment Due</option>
+                <option value="Net Banking">lipa na mpesa</option>
+                <option value="Payment Due">Cheque</option>
               </select>
             </div>
 
@@ -134,7 +132,7 @@
 
         </div>
         <!-- form content end -->
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
       </div>
     </div>
     

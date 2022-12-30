@@ -17,7 +17,7 @@
         <!-- header section -->
         <?php
           require "includes/header.php";
-          // createHeader('shopping-bag', 'Manage Medicines', 'Manage Existing Medicine');
+          // createHeader('capsules', 'Manage Medicines', 'Manage Existing Medicine');
         ?>
         <!-- header section end -->
 
@@ -63,7 +63,7 @@
 
         </div>
         <!-- form content end -->
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
       </div>
     </div>
         <script src="js/manage_medicine.js"></script>

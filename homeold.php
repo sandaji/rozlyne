@@ -136,7 +136,7 @@ unset($_SESSION['success']);
 
         </div>
 
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
 
         <div class="row">
 
@@ -155,7 +155,7 @@ unset($_SESSION['success']);
             }
             createSection2('address-card', 'new_invoice.php', 'Create New Invoice');
             createSection2('handshake', 'add_customer.php', 'Add New Customer');
-            createSection2('shopping-bag', 'add_medicine.php', 'Add New Medicine');
+            createSection2('capsules', 'add_medicine.php', 'Add New Medicine');
             createSection2('group', 'add_supplier.php', 'Add New Supplier');
             createSection2('bar-chart', 'add_purchase.php', 'Add New Purchase');
             createSection2('book', 'sales_report.php', 'Sales Report');
@@ -165,7 +165,7 @@ unset($_SESSION['success']);
         </div>
         <!-- form content end -->
 
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
 
       </div>
     </div>

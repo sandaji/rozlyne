@@ -11,7 +11,7 @@
     <div id="add_new_supplier_model">
       <div class="modal-dialog">
       	<div class="modal-content">
-      		<div class="modal-header" style="background-color: #ff5252; color: white">
+      		<div class="modal-header" style="background-color: #9732DAFF; color: white">
             <div class="font-weight-bold">Add New Supplier</div>
       			<button class="close" style="outline: none;" onclick="document.getElementById('add_new_supplier_model').style.display = 'none';"><i class="fa fa-close"></i></button>
       		</div>
@@ -32,7 +32,7 @@
         <!-- header section -->
         <?php
           require "includes/header.php";
-          // createHeader('shopping-bag', 'Add Medicine', 'Add New Medicine');
+          createHeader('capsules', 'Add Medicine', 'Add New Medicine');
         ?>
         <!-- header section end -->
 
@@ -46,7 +46,7 @@
           </div>
         </div>
 
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #6f42c1;">
         <!-- form content end -->
       </div>
     </div>

@@ -26,7 +26,7 @@
             ?>
           </div>
         </div>
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #6f42c1;">
       </div>
     </div>
     

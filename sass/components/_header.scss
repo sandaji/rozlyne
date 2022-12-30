@@ -1,21 +1,72 @@
 header {
-  background: $gray_200;
+  background: $main_bg;
   height: 6rem;
   border-bottom: 1px solid $white;
   i {
     font-size: 1.5rem;
   }
   .header__menu {
-    .avator {
-      height: 3rem;
-      width: 3rem;
-      border-radius: 50%;
-      background: $gray_400;
+    margin-right: 3rem;
+    i {
+      cursor: pointer;
+      position: relative;
+      span {
+        position: absolute;
+        P {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          background: rgb(0, 255, 8);
+          color: $white;
+          font-size: 12px;
+          margin-top: -0.5rem;
+          margin-left: -0.5rem;
+        }
+      }
     }
-  }
-  .avator__name{
-    margin-left: -2rem;
-    color:red;
-    text-transform:capitalize;
+    .user__options {
+      ul {
+        background: $dark;
+        height: 10rem;
+        width: 15rem;
+       margin-left: -11.3rem;
+        z-index: 400;
+        display: flex;align-items: center;
+        justify-content: center;
+        padding: 2rem auto;
+        border-radius: 0.5rem;
+
+        li {
+          a {
+            color: $gray-300;
+          }
+        }
+      }
+      .logout {
+        margin-right: 10px;
+        // position: relative;
+        margin-top: 3rem;
+      }
+      .avator {
+        cursor: pointer;
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .avator__image {
+          height: 2.5rem;
+          width: 2.5rem;
+          border-radius: 50%;
+          background: $gray_400;
+        }
+      }
+      .avator__name {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
   }
 }

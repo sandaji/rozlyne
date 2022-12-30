@@ -11,7 +11,7 @@
     } else {
       menu.style.display = "block";
       arrow.style.transform = "rotate(270deg)";
-      elements[1].style.color = "#ff5252";
+      elements[1].style.color = "#9732DAFF";
     }
     if (pid == id) pid = "none";
     if (pid != "none") {
@@ -50,7 +50,7 @@
       <!-- dashboard start -->
       <div class="main__menu-item top">
         <a href="home.php"
-          ><i class="fa fa-dashboard"></i><span>Main Dashboard</span></a
+          ><i class="fa-solid fa-briefcase-medical"></i><span>Main Dashboard</span></a
         >
       </div>
       <div class="main__menu-item mt-2">
@@ -65,7 +65,7 @@
       <!-- invoice strat -->
       <div id="first" class="main__menu-item" onclick="showhide(this.id);">
         <a href="#">
-          <i class="fa fa-balance-scale"></i><span>Invoice</span>
+          <i class="fa-solid fa-receipt"></i><span>Invoice</span>
           <span class="pull__right-container">
             <i class="fa fa-angle-right pull__right"></i>
           </span>
@@ -80,9 +80,9 @@
       <!-- invoice end -->
 
       <!-- customer end -->
-      <div id="second" class="main__menu-item bg-info" onclick="showhide(this.id);">
+      <div id="second" class="main__menu-item" onclick="showhide(this.id);">
         <a href="#">
-          <i class="fa fa-handshake"></i><span>Customer</span>
+         <i class="fa-solid fa-hospital-user"></i><span>Customer</span>
           <span class="pull__right-container">
             <i class="fa fa-angle-right pull__right"></i>
           </span>
@@ -96,17 +96,17 @@
       </div>
       <!-- customer end -->
 
-      <!-- medicine strat -->
+      <!-- medicine start -->
       <div id="third" class="main__menu-item" onclick="showhide(this.id);">
         <a href="#">
-          <i class="fa fa-shopping-bag"></i><span>Medicine</span>
+          <i class="fa-solid fa-capsules"></i><span>Medicine</span>
           <span class="pull__right-container">
             <i class="fa fa-angle-right pull__right"></i>
           </span>
         </a>
         <ul class="drop__down" style="display: none">
-          <li class="treeview"><a href="add_medicine.php">Add Medicine</a></li>
-          <li class="treeview">
+          <li><a href="add_medicine.php">Add Medicine</a></li>
+          <li>
             <a href="manage_medicine.php">Manage Medicine</a>
           </li>
           <li class="treeview">
@@ -119,7 +119,7 @@
       <!-- manufacturer start -->
       <div id="fourth" class="main__menu-item" onclick="showhide(this.id);">
         <a href="#">
-          <i class="fa fa-group"></i><span>Supplier</span>
+          <i class="fa-solid fa-truck-medical"></i><span>Supplier</span>
           <span class="pull__right-container">
             <i class="fa fa-angle-right pull__right"></i>
           </span>

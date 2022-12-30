@@ -1,20 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Add New Customer</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-		<script src="bootstrap/js/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/sidenav.css">
-    <link rel="stylesheet" href="css/home.css">
-    <script src="js/validateForm.js"></script>
-    <script src="js/my_profile.js"></script>
-    <script src="js/restrict.js"></script>
-  </head>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
   <body>
     <!-- including side navigations -->
     <?php include("sections/sidenav.html"); ?>
@@ -65,8 +56,13 @@
 
           </div>
         </div>
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
       </div>
     </div>
+    
+    <script src="js/validateForm.js"></script>
+    <script src="js/my_profile.js"></script>
+    <script src="js/restrict.js"></script>
+  </head>
   </body>
 </html>

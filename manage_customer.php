@@ -61,7 +61,7 @@
 
         </div>
         <!-- form content end -->
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
       </div>
     </div>
     

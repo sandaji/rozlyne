@@ -4,12 +4,9 @@
     <meta charset="utf-8">
     <title>Dashboard - Home</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-		<script src="bootstrap/js/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
-    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <script src="js/restrict.js"></script>
   </head>
   <body>
     <?php include "sections/sidenav.html"; ?>
@@ -18,7 +15,7 @@
         <!-- header section -->
         <?php
           require "includes/header.php";
-          // createHeader('bars', 'Dashboard', 'Home');
+          createHeader('bars', 'Dashboard', 'Home');
         ?>
         <!-- header section end -->
 
@@ -116,7 +113,7 @@
 
         </div>
 
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
 
         <div class="row">
 
@@ -135,7 +132,7 @@
             }
             createSection2('address-card', 'new_invoice.php', 'Create New Invoice');
             createSection2('handshake', 'add_customer.php', 'Add New Customer');
-            createSection2('shopping-bag', 'add_medicine.php', 'Add New Medicine');
+            createSection2('capsules', 'add_medicine.php', 'Add New Medicine');
             createSection2('group', 'add_supplier.php', 'Add New Supplier');
             createSection2('bar-chart', 'add_purchase.php', 'Add New Purchase');
             createSection2('book', 'sales_report.php', 'Sales Report');
@@ -145,9 +142,11 @@
         </div>
         <!-- form content end -->
 
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
 
       </div>
     </div>
+    
+    <script src="js/restrict.js"></script>
   </body>
 </html>

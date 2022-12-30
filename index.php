@@ -7,6 +7,8 @@
     </title>
     
     <link rel="stylesheet" type="text/css"
+            href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
             href="style.css">
 
              <style>
@@ -63,7 +65,7 @@
     </style>
 </head>
 <body class="text-center">
-   <div class="container wrapper">
+   <div class=" wrapper">
 <main>
         <h2 class="h3 mb-3 fw-normal">Login page!</h2>
 
@@ -83,14 +85,14 @@
     </div>
 
     
-    <div class="checkbox mb-3">
+    <div class="checkbox my-3">
       <label>
         <input type="checkbox" value="remember-me"> Remember me
       </label>
     </div>
  <button class="w-100 btn btn-lg btn-primary" type="submit" name="login_user">Sign in</button>
          
-    <p class="mt-5 mb-3 text-muted">rozelyne pharmacy&copy;<?php echo date("Y") ?></p>
+    <p class="mt-5 mb-3 text-muted">Rozelyne Pharmacy&copy;<?php echo date("Y") ?></p>
     </form>
     </main>
     </div>

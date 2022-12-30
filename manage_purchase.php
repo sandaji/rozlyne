@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Manage Purchase</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
-    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -18,7 +17,7 @@
         <!-- header section -->
         <?php
           require "includes/header.php";
-          // createHeader('bar-chart', 'Manage Purchase', 'Manage Existing Purchase');
+          createHeader('bar-chart', 'Manage Purchase', 'Manage Existing Purchase');
         ?>
         <!-- header section end -->
 
@@ -26,12 +25,11 @@
         <div class="row">
           <div class="col-md-12 form-group form-inline">
             <label class="font-weight-bold" for="">Search By:&emsp;</label>
-            
-            <div class="d-flex justify-content-center align-items-center">
+              <div class="d-flex justify-content-center align-items-center">
             <input type="number" class="form-control" id="by_voucher_number" placeholder="Voucher Number" onkeyup="searchPurchase(this.value, 'VOUCHER_NUMBER');">
             &emsp;<input type="text" class="form-control" id="by_suppliers_name" placeholder="Supplier Name" onkeyup="searchPurchase(this.value, 'SUPPLIER_NAME');">
             &emsp;<input type="number" class="form-control" id="by_invoice_number" placeholder="Invoice" onkeyup="searchPurchase(this.value, 'INVOICE_NUMBER');">
-            &emsp;<label class="font-weight-bold" for="">By Purchase Date :&emsp;</label>
+            &emsp;<label class="font-weight-bold" for="">Date :&emsp;</label>
             <input type="date" class="form-control" id="by_purchase_date" onchange="searchPurchase(this.value, 'PURCHASE_DATE');">
             &emsp;
             <select class="form-control" onchange="searchPurchase(this.value, 'PAYMENT_STATUS');">
@@ -73,7 +71,7 @@
 
         </div>
         <!-- form content end -->
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
       </div>
     </div>
     

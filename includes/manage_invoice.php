@@ -100,14 +100,14 @@
     <link rel="stylesheet" href="css/home.css">
     <div class="row">
       <div class="col-md-1"></div>
-      <div class="col-md-10 h3" style="color: #ff5252;">Customer Invoice<span class="float-right">Invoice Number : <?php echo $invoice_number; ?></span></div>
+      <div class="col-md-10 h3" style="color: #9732DAFF;">Customer Invoice<span class="float-right">Invoice Number : <?php echo $invoice_number; ?></span></div>
     </div>
     <div class="row fw-bold">
       <div class="col-md-1"></div>
       <div class="col-md-10"><span class="h4 float-right">Invoice Date. : <?php echo $invoice_date; ?></span></div>
     </div>
     <div class="row text-center">
-      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #ff5252;">
+      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #9732DAFF;">
     </div>
     <div class="row">
       <div class="col-md-1"></div>
@@ -142,7 +142,7 @@
       <div class="col-md-1"></div>
     </div>
     <div class="row text-center">
-      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #ff5252;">
+      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #9732DAFF;">
     </div>
 
     <div class="row">
@@ -201,7 +201,7 @@
       <div class="col-md-1"></div>
     </div>
     <div class="row text-center">
-      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #ff5252;">
+      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #9732DAFF;">
     </div>
     <?php
   }

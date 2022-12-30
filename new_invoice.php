@@ -4,24 +4,13 @@
     <meta charset="utf-8">
     <title>New Invoice</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-		<script src="bootstrap/js/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/sidenav.css">
-    <link rel="stylesheet" href="css/home.css">
-    <script src="js/suggestions.js"></script>
-    <script src="js/add_new_invoice.js"></script>
-    <script src="js/manage_invoice.js"></script>
-    <script src="js/validateForm.js"></script>
-    <script src="js/restrict.js"></script>
-  </head>
   <body>
     <div id="add_new_customer_model">
       <div class="modal-dialog">
       	<div class="modal-content">
-      		<div class="modal-header" style="background-color: #ff5252; color: white">
+      		<div class="modal-header" style="background-color: #9732DAFF; color: white">
             <div class="font-weight-bold">Add New Customer</div>
       			<button class="close" style="outline: none;" onclick="document.getElementById('add_new_customer_model').style.display = 'none';"><i class="fa fa-close"></i></button>
       		</div>
@@ -42,7 +31,7 @@
         <!-- header section -->
         <?php
           require "includes/header.php";
-          // createHeader('clipboard', 'New Invoice', 'Create New Invoice');
+          createHeader('clipboard', 'New Invoice', 'Create New Invoice');
         ?>
         <!-- header section end -->
 
@@ -168,8 +157,15 @@
 
         </div>
         <!-- form content end -->
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
       </div>
     </div>
+    
+    <script src="js/suggestions.js"></script>
+    <script src="js/add_new_invoice.js"></script>
+    <script src="js/manage_invoice.js"></script>
+    <script src="js/validateForm.js"></script>
+    <script src="js/restrict.js"></script>
+  </head>
   </body>
 </html>

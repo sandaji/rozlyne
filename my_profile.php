@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>Admin Profile</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./fontawesome/css//all.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- including side navigations -->
-    <?php include("sections/sidenav.html"); ?>
+    <?php 
+    include("sections/sidenav.html"); ?>
     <div class="container-fluid">
       <div class="container">
         <!-- header section -->
@@ -19,15 +20,16 @@
           createHeader('user', 'Profile', 'Manage Admin Details');
           // header section end
           require "includes/dbConfig.php";
+          require "server.php";
           if($con) {
             $query = "SELECT * FROM users";
             $result = mysqli_query($con, $query);
             $row = mysqli_fetch_array($result);
-            $pharmacy_name = $row['PHARMACY_NAME'];
-            $address = $row['ADDRESS'];
-            $email = $row['EMAIL'];
-            $contact_number = $row['CONTACT_NUMBER'];
-            $username = $row['USERNAME'];
+            $pharmacyName = $row['pharmacyName'];
+            $address = $row['address'];
+            $email = $row['email'];
+            $contactNumber = $row['contactNumber'];
+            $username = $row['username'];
           }
         ?>
         <div class="row">
@@ -35,8 +37,8 @@
 
             <div class="row col col-md-12">
               <div class="col col-md-12 form-group">
-                <label class="font-weight-bold" for="pharmacy_name">Pharmacy Name :</label>
-                <input id="pharmacy_name" type="text" class="form-control" value="<?php echo $pharmacy_name; ?>" placeholder="pharmacy name" onkeyup="validateName(this.value, 'pharmacy_name_error');" disabled>
+                <label class="font-weight-bold" for="pharmacyName">Pharmacy Name :</label>
+                <input id="pharmacyName" type="text" class="form-control" value="<?php echo $pharmacyName; ?>" placeholder="pharmacy name" onkeyup="validateName(this.value, 'pharmacy_name_error');" disabled>
                 <code class="text-danger small font-weight-bold float-right mb-2" id="pharmacy_name_error" style="display: none;"></code>
               </div>
             </div>
@@ -44,7 +46,7 @@
             <div class="row col col-md-12">
               <div class="col col-md-12 form-group">
                 <label class="font-weight-bold" for="address">Address :</label>
-                <textarea id="address" class="form-control" placeholder="address" onkeyup="validateAddress(this.value, 'address_error');" style="max-height: 100px;" disabled><?php echo $address; ?></textarea>
+                <textarea id="address" class="form-control" placeholder="address" name="address" onkeyup="validateAddress(this.value, 'address_error');" style="max-height: 100px;" disabled><?php echo $address; ?></textarea>
                 <code class="text-danger small font-weight-bold float-right mb-2" id="address_error" style="display: none;"></code>
               </div>
             </div>
@@ -52,7 +54,7 @@
             <div class="row col col-md-12">
               <div class="col col-md-12 form-group">
                 <label class="font-weight-bold" for="email">Email :</label>
-                <input id="email" type="email" class="form-control" value="<?php echo $email; ?>" placeholder="email" onkeyup="notNull(this.value, 'email_error');" disabled>
+                <input id="email" type="email" name="email" class="form-control" value="<?php echo $email; ?>" placeholder="email" onkeyup="notNull(this.value, 'email_error');" disabled>
                 <code class="text-danger small font-weight-bold float-right mb-2" id="email_error" style="display: none;"></code>
               </div>
             </div>
@@ -102,7 +104,7 @@
             <div id="admin_acknowledgement" class="col-md-12 h5 text-success font-weight-bold text-center" style="font-family: sans-serif;"></div>
           </div>
         </div>
-        <hr style="border-top: 2px solid #ff5252;">
+        <hr style="border-top: 2px solid #9732DAFF;">
       </div>
     </div>
     

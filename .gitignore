@@ -1,6 +1,6 @@
-fontawesome
-bootstrap
+./fontawesome/
+./bootstrap/
 .scss
-sass
-css
-images
+sass/
+css/
+images/
