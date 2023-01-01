@@ -84,25 +84,25 @@ function showEditOptionsRow($seq_no, $row) {
     <td><?php echo $row['PACKING']; ?></td>
     <td><?php echo $row['GENERIC_NAME']; ?></td>
     <td>
-      <input type="text" class="form-control" value="<?php echo $row['BATCH_ID']; ?>" placeholder="Batch ID" id="batch_id" onblur="notNull(this.value, 'batch_id_error');">
-      <code class="text-danger small fw-bold float-right" id="batch_id_error" style="display: none;"></code>
+      <input type="text" class="form-control" value="<?php echo $row['BATCH_ID']; ?>" placeholder="Batch No" id="batch_id" onblur="notNull(this.value, 'batch_id_error');">
+      <code class="text-danger small font-weight-bold float-right" id="batch_id_error" style="display: none;"></code>
     </td>
     <td>
       <input type="text" class="form-control" value="<?php echo $row['EXPIRY_DATE']; ?>" placeholder="Expiry" id="expiry_date" onblur="checkExpiry(this.value, 'expiry_date_error');">
-      <code class="text-danger small fw-bold float-right" id="expiry_date_error" style="display: none;"></code>
+      <code class="text-danger small font-weight-bold float-right" id="expiry_date_error" style="display: none;"></code>
     </td>
     <td><?php echo $row['SUPPLIER_NAME']; ?></td>
     <td>
       <input type="number" class="form-control" value="<?php echo $row['QUANTITY']; ?>" placeholder="Quantity" id="quantity" onkeyup="checkQuantity(this.value, 'quantity_error');">
-      <code class="text-danger small fw-bold float-right" id="quantity_error" style="display: none;"></code>
+      <code class="text-danger small font-weight-bold float-right" id="quantity_error" style="display: none;"></code>
     </td>
     <td>
       <input type="number" class="form-control" value="<?php echo $row['MRP']; ?>" placeholder="MRP" id="mrp" onkeyup="checkValue(this.value, 'mrp_error');">
-      <code class="text-danger small fw-bold float-right" id="mrp_error" style="display: none;"></code>
+      <code class="text-danger small font-weight-bold float-right" id="mrp_error" style="display: none;"></code>
     </td>
     <td>
       <input type="number" class="form-control" value="<?php echo $row['RATE']; ?>" placeholder="Rate" id="rate" onkeyup="checkValue(this.value, 'rate_error');">
-      <code class="text-danger small fw-bold float-right" id="rate_error" style="display: none;"></code>
+      <code class="text-danger small font-weight-bold float-right" id="rate_error" style="display: none;"></code>
     </td>
     <td>
       <button href="" class="btn btn-success btn-sm" onclick="updateMedicineStock(<?php echo $row[5]; ?>);">

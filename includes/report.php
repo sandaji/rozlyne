@@ -36,7 +36,7 @@ function showPurchases($start_date, $end_date) {
     }
     ?>
     </tbody>
-    <tfoot class="fw-bold">
+    <tfoot class="font-weight-bold">
       <tr style="text-align: right; font-size: 24px;">
         <td colspan="5" style="color: green;">&nbsp;Total Purchases =</td>
         <td style="color: red;"><?php echo $total; ?></td>
@@ -89,7 +89,7 @@ function showSales($start_date, $end_date) {
     }
     ?>
     </tbody>
-    <tfoot class="fw-bold">
+    <tfoot class="font-weight-bold">
       <tr style="text-align: right; font-size: 24px;">
         <td colspan="4" style="color: green;">&nbsp;Total Sales =</td>
         <td class="text-primary"><?php echo $total; ?></td>

@@ -6,21 +6,21 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-      </head>
+  </head>
   <body>
     <div id="add_new_customer_model">
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header" style="background-color: #9732DAFF; color: white">
+      	<div class="modal-content">
+      		<div class="modal-header" style="background-color: #ff5252; color: white">
             <div class="font-weight-bold">Add New Customer</div>
-            <button class="close" style="outline: none;" onclick="document.getElementById('add_new_customer_model').style.display = 'none';"><i class="fa fa-close"></i></button>
-          </div>
-          <div class="modal-body">
+      			<button class="close" style="outline: none;" onclick="document.getElementById('add_new_customer_model').style.display = 'none';"><i class="fa fa-close"></i></button>
+      		</div>
+      		<div class="modal-body">
             <?php
               include('sections/add_new_customer.html');
             ?>
-          </div>
-        </div>
+      		</div>
+      	</div>
       </div>
     </div>
     <!-- including side navigations -->
@@ -57,10 +57,9 @@
             <div class="col col-md-2 form-group">
               <label class="font-weight-bold" for="">Payment Type :</label>
               <select id="payment_type" class="form-control">
-                <option value="1">Cash Payment</option>
-                <option value="4">lipa na mpesa</option>
-                <option value="2">Card Payment</option>
-                <option value="3">Cheque</option>
+              	<option value="1">Cash Payment</option>
+              	<option value="2">Card Payment</option>
+                <option value="3">Net Banking</option>
               </select>
             </div>
             <div class="col col-md-2 form-group">
@@ -74,7 +73,7 @@
           <!-- new user button -->
           <div class="row col col-md-12">
             <div class="col col-md-2 form-group">
-              <button class="btn btn-primary form-control mt-3" onclick="document.getElementById('add_new_customer_model').style.display = 'block';">Add New Customer</button>
+              <button class="btn btn-primary form-control" onclick="document.getElementById('add_new_customer_model').style.display = 'block';">New Customer</button>
             </div>
             <div class="col col-md-1 form-group"></div>
             <div class="col col-md-2 form-group">
@@ -89,11 +88,11 @@
           </div>
 
           <!-- add medicines -->
-          <div class="row col col-md-12 bg-info">
-            <div class="row col col-md-12 font-weight-bold d-flex justify-content-center align-items-center">
+          <div class="row col col-md-12">
+            <div class="row col col-md-12 font-weight-bold">
               <div class="col col-md-2">Medicine Name</div>
-              <div class="col col-md-2">Batch ID</div>
-              <div class="col col-md-1">count in stock</div>
+              <div class="col col-md-2">Batch No</div>
+              <div class="col col-md-1">Available</div>
               <div class="col col-md-1">Expiry</div>
               <div class="col col-md-1">Quantity</div>
               <div class="col col-md-1">MRP</div>
@@ -162,7 +161,7 @@
         <hr style="border-top: 2px solid #ff5252;">
       </div>
     </div>
-
+    
     <script src="js/suggestions.js"></script>
     <script src="js/add_new_invoice.js"></script>
     <script src="js/manage_invoice.js"></script>

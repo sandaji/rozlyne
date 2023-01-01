@@ -21,7 +21,7 @@
 
         <!-- form content -->
         <div class="row">
-          <div class="row col col-xs-8 col-sm-8 col-md-8 col-lg-8">
+          <div class="row col col-8">
 
             <?php
               function createSection1($location, $title, $table) {

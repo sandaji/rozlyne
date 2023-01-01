@@ -75,18 +75,18 @@ function showEditOptionsRow($seq_no, $row) {
     <td><?php echo $row['ID'] ?></td>
     <td>
       <input type="text" class="form-control" value="<?php echo $row['NAME']; ?>" placeholder="Name" id="supplier_name" onkeyup="validateName(this.value, 'name_error');">
-      <code class="text-danger small fw-bold float-right" id="name_error" style="display: none;"></code>
+      <code class="text-danger small font-weight-bold float-right" id="name_error" style="display: none;"></code>
     </td>
     <td>
       <input type="email" class="form-control" value="<?php echo $row['EMAIL']; ?>" placeholder="Email" id="supplier_email" onblur="validateContactNumber(this.value, 'email_error');">
     </td>
     <td>
       <input type="number" class="form-control" value="<?php echo $row['CONTACT_NUMBER']; ?>" placeholder="Contact Number" id="supplier_contact_number" onblur="validateContactNumber(this.value, 'contact_number_error');">
-      <code class="text-danger small fw-bold float-right" id="contact_number_error" style="display: none;"></code>
+      <code class="text-danger small font-weight-bold float-right" id="contact_number_error" style="display: none;"></code>
     </td>
     <td>
       <textarea class="form-control" placeholder="Address" id="supplier_address" onblur="validateAddress(this.value, 'address_error');"><?php echo $row['ADDRESS']; ?></textarea>
-      <code class="text-danger small fw-bold float-right" id="address_error" style="display: none;"></code>
+      <code class="text-danger small font-weight-bold float-right" id="address_error" style="display: none;"></code>
     </td>
     <td>
       <button href="" class="btn btn-success btn-sm" onclick="updateSupplier(<?php echo $row['ID']; ?>);">

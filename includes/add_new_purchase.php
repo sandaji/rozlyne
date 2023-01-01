@@ -99,31 +99,31 @@
       <div class="row col col-md-12">
         <div class="col col-md-2">
           <input type="text" class="form-control" placeholder="Medicine Name" name="medicine_name">
-          <code class="text-danger small fw-bold float-right" id="medicine_name_error_<?php echo $row_number; ?>" style="display: none;"></code>
+          <code class="text-danger small font-weight-bold float-right" id="medicine_name_error_<?php echo $row_number; ?>" style="display: none;"></code>
         </div>
         <div class="col col-md-1">
           <input type="text" class="form-control" name="packing">
-          <code class="text-danger small fw-bold float-right" id="pack_error_<?php echo $row_number; ?>" style="display: none;"></code>
+          <code class="text-danger small font-weight-bold float-right" id="pack_error_<?php echo $row_number; ?>" style="display: none;"></code>
         </div>
         <div class="col col-md-2">
           <input type="text" class="form-control" name="batch_id">
-          <code class="text-danger small fw-bold float-right" id="batch_id_error_<?php echo $row_number; ?>" style="display: none;"></code>
+          <code class="text-danger small font-weight-bold float-right" id="batch_id_error_<?php echo $row_number; ?>" style="display: none;"></code>
         </div>
         <div class="col col-md-1">
           <input type="text" class="form-control" name="expiry_date">
-          <code class="text-danger small fw-bold float-right" id="expiry_date_error_<?php echo $row_number; ?>" style="display: none;"></code>
+          <code class="text-danger small font-weight-bold float-right" id="expiry_date_error_<?php echo $row_number; ?>" style="display: none;"></code>
         </div>
         <div class="col col-md-1">
           <input type="number" class="form-control" placeholder="0" id="quantity_<?php echo $row_number; ?>" name="quantity" onkeyup="getAmount(<?php echo $row_number; ?>);">
-          <code class="text-danger small fw-bold float-right" id="quantity_error_<?php echo $row_number; ?>" style="display: none;"></code>
+          <code class="text-danger small font-weight-bold float-right" id="quantity_error_<?php echo $row_number; ?>" style="display: none;"></code>
         </div>
         <div class="col col-md-1">
           <input type="number" class="form-control" name="mrp">
-          <code class="text-danger small fw-bold float-right" id="mrp_error_<?php echo $row_number; ?>" style="display: none;"></code>
+          <code class="text-danger small font-weight-bold float-right" id="mrp_error_<?php echo $row_number; ?>" style="display: none;"></code>
         </div>
         <div class="col col-md-1">
           <input type="number" class="form-control" id="rate_<?php echo $row_number; ?>" name="rate" onkeyup="getAmount(<?php echo $row_number; ?>);">
-          <code class="text-danger small fw-bold float-right" id="rate_error_<?php echo $row_number; ?>" style="display: none;"></code>
+          <code class="text-danger small font-weight-bold float-right" id="rate_error_<?php echo $row_number; ?>" style="display: none;"></code>
         </div>
         <div class="row col col-md-3">
           <div class="col col-md-7"><input type="text" class="form-control" id="amount_<?php echo $row_number; ?>" disabled></div>
@@ -138,10 +138,10 @@
         </div>
       </div><br>
       <div class="row col col-md-8">
-        <div class="col col-md-4"><label for="generic_name" class="fw-bold">&nbsp;If new medicine, generic name : </label></div>
+        <div class="col col-md-4"><label for="generic_name" class="font-weight-bold">&nbsp;If new medicine, generic name : </label></div>
         <div class="col col-md-8">
           <input type="text" class="form-control" placeholder="Generic Name" name="generic_name">
-          <code class="text-danger small fw-bold float-right" id="generic_name_error_<?php echo $row_number; ?>" style="display: none;"></code>
+          <code class="text-danger small font-weight-bold float-right" id="generic_name_error_<?php echo $row_number; ?>" style="display: none;"></code>
         </div>
       </div>
       <div class="col col-md-12">

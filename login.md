@@ -6,7 +6,7 @@ header("location: home.php");
   exit;
 }
 
-require_once './includes/dbConfig.php';
+require_once '.includes//dbConfig.php';
 
 $USERNAME = $PASSWORD = "";
 
@@ -65,11 +65,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 ?>
-
-
-
-
-
 
 <?php include ('server.php') ?>
 <!DOCTYPE html>
@@ -162,26 +157,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
     <button class="w-100 btn btn-lg btn-primary" type="submit" name="login_user">Sign in</button>
     <p class="mt-5 mb-3 text-muted">&copy;<?php echo date("Y") ?></p>
+
   </form>
 </main></div> 
 <script src="js/index.js"></script>
 
-    
   </body>
 </html>
 
-
-
-
-
-
-
 git remote add origin https://github.com/sandaji/rozlyne.git
 git branch -M main
-git push -u origin 
-
+git push -u origin
 
 5z8k$jw^!E($va7@cgpp
-
-
-

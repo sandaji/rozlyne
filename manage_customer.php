@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Manage Customer</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./fontawesome/css/all.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
@@ -31,7 +30,7 @@
           </div>
 
           <div class="col col-md-12">
-            <hr class="col-md-12" style="padding: 0px; border-top: 2px solid  #02b6ff;">
+            <hr class="col-md-12" style="padding: 0px; border-top: 2px solid  #9834da;">
           </div>
 
           <div class="col col-md-12 table-responsive">
@@ -61,7 +60,7 @@
 
         </div>
         <!-- form content end -->
-        <hr style="border-top: 2px solid #9732DAFF;">
+        <hr style="border-top: 2px solid #9834da;">
       </div>
     </div>
     

@@ -5,7 +5,6 @@
     <title>Manage Supplier</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>

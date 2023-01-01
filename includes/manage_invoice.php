@@ -94,36 +94,36 @@
     }
 
     ?>
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/sidenav.css">
     <link rel="stylesheet" href="css/home.css">
     <div class="row">
       <div class="col-md-1"></div>
-      <div class="col-md-10 h3" style="color: #9732DAFF;">Customer Invoice<span class="float-right">Invoice Number : <?php echo $invoice_number; ?></span></div>
+      <div class="col-md-10 h3" style="color: #ff5252;">Customer Invoice<span class="float-right">Invoice Number : <?php echo $invoice_number; ?></span></div>
     </div>
-    <div class="row fw-bold">
+    <div class="row font-weight-bold">
       <div class="col-md-1"></div>
       <div class="col-md-10"><span class="h4 float-right">Invoice Date. : <?php echo $invoice_date; ?></span></div>
     </div>
     <div class="row text-center">
-      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #9732DAFF;">
+      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #ff5252;">
     </div>
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-4">
         <span class="h4">Customer Details : </span><br><br>
-        <span class="fw-bold">Name : </span><?php echo $customer_name; ?><br>
-        <span class="fw-bold">Address : </span><?php echo $address; ?><br>
-        <span class="fw-bold">Contact Number : </span><?php echo $contact_number; ?><br>
-        <span class="fw-bold">Doctor's Name : </span><?php echo $doctor_name; ?><br>
-        <span class="fw-bold">Doctor's Address : </span><?php echo $doctor_address; ?><br>
+        <span class="font-weight-bold">Name : </span><?php echo $customer_name; ?><br>
+        <span class="font-weight-bold">Address : </span><?php echo $address; ?><br>
+        <span class="font-weight-bold">Contact Number : </span><?php echo $contact_number; ?><br>
+        <span class="font-weight-bold">Doctor's Name : </span><?php echo $doctor_name; ?><br>
+        <span class="font-weight-bold">Doctor's Address : </span><?php echo $doctor_address; ?><br>
       </div>
       <div class="col-md-3"></div>
 
       <?php
 
-      $query = "SELECT * FROM admin";
+      $query = "SELECT * FROM admin_credentials";
       $result = mysqli_query($con, $query);
       $row = mysqli_fetch_array($result);
       $p_name = $row['PHARMACY_NAME'];
@@ -134,15 +134,15 @@
 
       <div class="col-md-4">
         <span class="h4">Shop Details : </span><br><br>
-        <span class="fw-bold"><?php echo $p_name; ?></span><br>
-        <span class="fw-bold"><?php echo $p_address; ?></span><br>
-        <span class="fw-bold"><?php echo $p_email; ?></span><br>
-        <span class="fw-bold">Mob. No.: <?php echo $p_contact_number; ?></span>
+        <span class="font-weight-bold"><?php echo $p_name; ?></span><br>
+        <span class="font-weight-bold"><?php echo $p_address; ?></span><br>
+        <span class="font-weight-bold"><?php echo $p_email; ?></span><br>
+        <span class="font-weight-bold">Mob. No.: <?php echo $p_contact_number; ?></span>
       </div>
       <div class="col-md-1"></div>
     </div>
     <div class="row text-center">
-      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #9732DAFF;">
+      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #ff5252;">
     </div>
 
     <div class="row">
@@ -182,7 +182,7 @@
               }
             ?>
           </tbody>
-          <tfoot class="fw-bold">
+          <tfoot class="font-weight-bold">
             <tr style="text-align: right; font-size: 18px;">
               <td colspan="6">&nbsp;Total Amount</td>
               <td><?php echo $total_amount; ?></td>
@@ -201,7 +201,7 @@
       <div class="col-md-1"></div>
     </div>
     <div class="row text-center">
-      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #9732DAFF;">
+      <hr class="col-md-10" style="padding: 0px; border-top: 2px solid  #ff5252;">
     </div>
     <?php
   }

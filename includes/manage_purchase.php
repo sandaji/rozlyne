@@ -81,7 +81,7 @@ function showEditOptionsRow($seq_no, $row) {
     <td><?php echo $row['VOUCHER_NUMBER'] ?></td>
     <td>
       <input id="suppliers_name" type="text" class="form-control" value="<?php echo $row['SUPPLIER_NAME']; ?>" placeholder="Supplier Name" name="suppliers_name" onkeyup="showSuggestions(this.value, 'supplier');" disabled>
-      <!--<code class="text-danger small fw-bold float-right" id="supplier_name_error" style="display: none;"></code>
+      <!--<code class="text-danger small font-weight-bold float-right" id="supplier_name_error" style="display: none;"></code>
       <div id="supplier_suggestions" class="list-group position-fixed" style="z-index: 1; width: 25.10%; overflow: auto; max-height: 200px;"></div>-->
     </td>
     <td>
@@ -89,7 +89,7 @@ function showEditOptionsRow($seq_no, $row) {
     </td>
     <td>
       <input type="date" class="datepicker form-control hasDatepicker" id="invoice_date" name="invoice_date" value='<?php echo $row['PURCHASE_DATE'] ?>' onblur="checkDate(this.value, 'date_error');">
-      <code class="text-danger small fw-bold float-right" id="date_error" style="display: none;"></code>
+      <code class="text-danger small font-weight-bold float-right" id="date_error" style="display: none;"></code>
     </td>
     <td><input type="text" class="form-control" value="<?php echo $row['TOTAL_AMOUNT']; ?>" id="grand_total" name="grand_total" disabled></td>
     <td>

@@ -93,7 +93,7 @@
           <div class="row col col-md-12 font-weight-bold">
             <div class="col col-md-2">Medicine Name</div>
             <div class="col col-md-1">Packing</div>
-            <div class="col col-md-2">Batch ID</div>
+            <div class="col col-md-2">Batch No</div>
             <div class="col col-md-1">Ex. Date (mm/yy)</div>
             <div class="col col-md-1">Quantity</div>
             <div class="col col-md-1">MRP</div>

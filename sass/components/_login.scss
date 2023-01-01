@@ -7,7 +7,7 @@
   justify-content: center;
   background-size: 100% 100%;
 background-position: 0px 0px,0px 0px,0px 0px;
-background-image: radial-gradient(113% 91% at 17% -2%, #EA00FFFF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #0092FFFF 1%, #FF000000 99%),linear-gradient(274deg, #9732DAFF 0%, #9732DAFF 19%, #FF0000FF 100%);
+background-image: radial-gradient(113% 91% at 17% -2%, $pink 1%, $dark 99%),radial-gradient(142% 91% at -6% 74%, $info 1%, $dark 99%),linear-gradient(274deg, $main-bg 0%, $main-bg 19%, $red 100%);
   main {
     // max-width: 400px;
     padding: 15px;
@@ -20,7 +20,7 @@ background-image: radial-gradient(113% 91% at 17% -2%, #EA00FFFF 1%, #FF000000 9
           border-radius: 5px;
         }
         label{
-          color: $bs_blue;
+          color: $blue;
         }
         &:focus-within {
         z-index: 2;

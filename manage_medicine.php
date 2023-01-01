@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Manage Medicines</title>
@@ -17,7 +17,7 @@
         <!-- header section -->
         <?php
           require "includes/header.php";
-          // createHeader('capsules', 'Manage Medicines', 'Manage Existing Medicine');
+          createHeader('capsules', 'Manage Medicines', 'Manage Existing Medicine');
         ?>
         <!-- header section end -->
 

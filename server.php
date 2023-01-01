@@ -14,7 +14,7 @@ $errors = array();
 $_SESSION['success'] = "";
 // DBMS connection code -> hostname,
 // username, password, database name
-$db = mysqli_connect('localhost', 'root', '', 'test');
+$db = mysqli_connect('localhost', 'root', '', 'pharmacy');
 // Registration code
 if (isset($_POST['reg_user'])) {
     // Receiving the values entered and storing
