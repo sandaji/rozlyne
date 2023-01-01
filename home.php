@@ -1,11 +1,36 @@
+<?php
+ 
+// Starting the session, to use and
+// store data in session variable
+session_start();
+  
+// If the session variable is empty, this
+// means the user is yet to login
+// User will be sent to 'login.php' page
+// to allow the user to login
+if (!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "You have to log in first";
+    header('location: index.php');
+}
+  
+// Logout button will destroy the session, and
+// will unset the session variables
+// User will be headed to 'login.php'
+// after logging out
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: index.php");
+}
+?>
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Dashboard - Home</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>

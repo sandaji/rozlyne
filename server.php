@@ -14,7 +14,7 @@ $errors = array();
 $_SESSION['success'] = "";
 // DBMS connection code -> hostname,
 // username, password, database name
-$db = mysqli_connect('localhost', 'root', '', 'pharmacy');
+$db = mysqli_connect('localhost', 'root', '', 'test');
 // Registration code
 if (isset($_POST['reg_user'])) {
     // Receiving the values entered and storing
@@ -23,12 +23,18 @@ if (isset($_POST['reg_user'])) {
     // SQL injections
     $username = mysqli_real_escape_string($db, $_POST['username']);
     $email = mysqli_real_escape_string($db, $_POST['email']);
+    $pharmacyName = mysqli_real_escape_string($db, $_POST['pharmacyName']);
+    $address = mysqli_real_escape_string($db, $_POST['address']);
+    $contactNumber = mysqli_real_escape_string($db, $_POST['contactNumber']);
     $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
     $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
     // Ensuring that the user has not left any input field blank
     // error messages will be displayed for every blank input
     if (empty($username)) { array_push($errors, "Username is required"); }
     if (empty($email)) { array_push($errors, "Email is required"); }
+    if (empty($pharmacyName)) { array_push($errors, "Name of your pharmacy is required"); }
+    if (empty($contactNumber)) { array_push($errors, "contact Number is required"); }
+    if (empty($address)) { array_push($errors, "address is required"); }
     if (empty($password_1)) { array_push($errors, "Password is required"); }
     if ($password_1 != $password_2) {
         array_push($errors, "The two passwords do not match");
@@ -41,8 +47,8 @@ if (isset($_POST['reg_user'])) {
         $password = md5($password_1);
         
         // Inserting data into table
-        $query = "INSERT INTO users (username, email, password) 
-                  VALUES('$username', '$email', '$password')"; 
+        $query = "INSERT INTO users (username, email, password, contactNumber, address, pharmacyName) 
+                  VALUES('$username', '$email', '$password', '$contactNumber', '$address', '$pharmacyName')"; 
         
         mysqli_query($db, $query);
         // Storing username of the logged in user,
